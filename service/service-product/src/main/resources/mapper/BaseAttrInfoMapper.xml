@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.gmall.product.mapper.BaseAttrInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.atguigu.gmall.product.entity.BaseAttrInfo">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="attrName" column="attr_name" jdbcType="VARCHAR"/>
+        <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
+        <result property="categoryLevel" column="category_level" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,attr_name,category_id,
+        category_level
+    </sql>
+
+
+    <!--    自定义JavaBean的封装规则-->
+    <resultMap id="BaseAttrAndValueRM"
+               type="com.atguigu.gmall.product.entity.BaseAttrInfo"
+               autoMapping="true">
+        <id property="id" column="id"></id>
+        <!--        <result property="attrName" column="attr_name"></result>-->
+        <!--        <result property="categoryId" column="category_id"></result>-->
+        <!--        <result property="categoryLevel" column="category_level"></result>-->
+        <collection property="attrValueList"
+                    ofType="com.atguigu.gmall.product.entity.BaseAttrValue"
+                    autoMapping="true">
+            <id property="id" column="vid"></id>
+            <!--            <result property="attrId" column="attr_id"></result>-->
+            <!--            <result property="valueName" column="value_name"></result>-->
+        </collection>
+    </resultMap>
+
+    <select id="getBaseAttrAndValue"
+            resultMap="BaseAttrAndValueRM">
+        SELECT bai.*, bav.id vid,bav.value_name,bav.attr_id
+        FROM `base_attr_info` bai
+        LEFT JOIN `base_attr_value` bav ON bai.id = bav.attr_id
+        WHERE (bai.`category_id` = #{category1Id} AND bai.`category_level` = 1)
+        <if test="category2Id != 0">
+            OR (bai.`category_id` = #{category2Id} AND bai.`category_level` = 2)
+        </if>
+        <if test="category3Id != 0">
+            OR (bai.`category_id` = #{category3Id} AND bai.`category_level` = 3)
+        </if>
+    </select>
+</mapper>
