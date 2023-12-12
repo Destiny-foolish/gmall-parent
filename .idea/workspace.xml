@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07836e6f-b4b6-43ab-8482-a774224170cf" name="Changes" comment="12.12提交">
-      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <workItem from="1700991135705" duration="1529000" />
       <workItem from="1700993523902" duration="2684000" />
       <workItem from="1701088623211" duration="4582000" />
-      <workItem from="1702032235371" duration="12718000" />
+      <workItem from="1702032235371" duration="12792000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1700738007348</created>
