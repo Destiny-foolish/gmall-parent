@@ -1,0 +1,34 @@
+server:
+  port: 80
+
+#spring:
+#  zipkin:
+#    base-url: http://192.168.200.100:9411/
+#    sender:
+#      type: web
+#  sleuth:
+#    sampler:
+#      rate: 100
+
+spring:
+  cloud:
+    gateway:
+      routes: #一个请求来以后，从上到下开始匹配，看哪个规则能匹配上就用哪种转发。顺序很重要
+        - id: product_route
+          uri: lb://service-product
+          predicates:
+            - Path=/admin/product/**
+
+        - id: weball_route   #只要前面没有任何人能匹配上，最终都交给web-all
+          uri: lb://web-all
+          predicates:
+            - Host=gmall.com,**.gmall.com
+
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*" #允许所有来源
+            allowedMethods: "*" #允许所有方式 GET POST DELETE ....
+            allowedHeaders: "*"
+            allowCredentials: true #跨域携带Cookie

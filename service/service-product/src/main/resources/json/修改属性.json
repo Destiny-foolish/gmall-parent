@@ -1,0 +1,31 @@
+{
+  "id": 11,
+  "attrName": "屏幕材质1",
+  "category1Id": 0,
+  "category2Id": 0,
+  "category3Id": 0,
+  "attrValueList": [
+    {
+      "id": 59,
+      "valueName": "AMOLED~~",
+      "attrId": 11,
+      "edit": false
+    },
+    {
+      "id": 60,
+      "valueName": "OLED折叠屏",
+      "attrId": 11
+    },
+    {
+      "id": 63,
+      "valueName": "未上市",
+      "attrId": 11
+    },
+    {
+      "valueName": "正在上市~~",
+      "edit": false
+    }
+  ],
+  "categoryId": 61,
+  "categoryLevel": 3
+}

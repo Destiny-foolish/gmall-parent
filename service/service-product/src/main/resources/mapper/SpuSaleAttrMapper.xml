@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.gmall.product.mapper.SpuSaleAttrMapper">
+
+    <resultMap id="BaseResultMap" type="com.atguigu.gmall.product.entity.SpuSaleAttr">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="spuId" column="spu_id" jdbcType="BIGINT"/>
+        <result property="baseSaleAttrId" column="base_sale_attr_id" jdbcType="BIGINT"/>
+        <result property="saleAttrName" column="sale_attr_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,spu_id,base_sale_attr_id,
+        sale_attr_name
+    </sql>
+
+    <resultMap id="SpuSaleAttrAndValueRM"
+               type="com.atguigu.gmall.product.entity.SpuSaleAttr"
+               autoMapping="true">
+        <id property="id" column="id"></id>
+        <collection property="spuSaleAttrValueList"
+                    ofType="com.atguigu.gmall.product.entity.SpuSaleAttrValue"
+                    autoMapping="true">
+            <id property="id" column="vid"></id>
+        </collection>
+    </resultMap>
+
+    <select id="getSpuSaleAttrList"
+            resultMap="SpuSaleAttrAndValueRM">
+        select ssa.*,
+               ssav.id vid,
+               ssav.sale_attr_value_name
+        from spu_sale_attr ssa
+                 left join spu_sale_attr_value ssav
+                           on ssa.spu_id = ssav.spu_id
+                               and ssa.base_sale_attr_id = ssav.base_sale_attr_id
+        where ssa.spu_id = #{spuId}
+    </select>
+
+    <select id="getSpuSaleAttrListOrder"
+            resultMap="SpuSaleAttrAndValueRM">
+        select ssa.*,
+               ssav.id vid,
+               ssav.sale_attr_value_name,
+               IF(skuav.sale_attr_value_id IS NULL,'0','1') is_checked
+        from spu_sale_attr ssa
+                 left join spu_sale_attr_value ssav
+                           on ssav.spu_id=ssa.spu_id
+                           and ssav.base_sale_attr_id=ssa.base_sale_attr_id
+                 left join sku_sale_attr_value skuav
+                           on skuav.sku_id=#{skuId}
+                           and skuav.sale_attr_value_id=ssav.id
+        where ssa.spu_id=#{spuId}
+        ORDER BY ssa.base_sale_attr_id,ssav.id
+    </select>
+    <select id="getValuesSkuJson"
+            resultType="com.atguigu.gmall.product.vo.ValueSkuJsonVo">
+        select a.sku_id ,
+               GROUP_CONCAT(DISTINCT a.sale_attr_value_id ORDER BY a.sale_attr_value_id ASC SEPARATOR '|') value_json
+        from (select skuav.sku_id,
+                     skuav.sale_attr_value_id
+              from sku_sale_attr_value  skuav
+                       left join spu_sale_attr_value ssav
+                                 on skuav.sale_attr_value_id=ssav.id
+              where skuav.sku_id IN (select id from sku_info where spu_id=#{spuId})
+              order by  skuav.sku_id,ssav.base_sale_attr_id,ssav.id) a
+        GROUP BY a.sku_id
+    </select>
+</mapper>

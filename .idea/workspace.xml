@@ -4,19 +4,480 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07836e6f-b4b6-43ab-8482-a774224170cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="07836e6f-b4b6-43ab-8482-a774224170cf" name="Changes" comment="12.12提交">
+      <change afterPath="$PROJECT_DIR$/common/common-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/execption/GmallException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/result/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/HttpClientUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/IpUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-util/src/main/java/com/atguigu/gmall/common/util/MD5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/Swagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/minio/MinioAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/minio/annotation/EnableMinio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/minio/config/MinioConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/minio/properties/MinioProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/BaseCategory1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/BaseCategory2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/BaseCategory3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/BaseSaleAttr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/BaseTrademark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SkuAttrValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SkuImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SkuInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SkuSaleAttrValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SpuImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SpuInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SpuPoster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SpuSaleAttr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/entity/SpuSaleAttrValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/vo/CategoryTreeVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/vo/SkuDetailVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/vo/SkuSaveVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/vo/SpuSaveInfoVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/src/main/java/com/atguigu/gmall/product/vo/ValueSkuJsonVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-gateway/src/main/java/com/atguigu/gmall/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/ItemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/feign/SkuDetailFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/rpc/SkuDetailRpcController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/SkuDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/SkuDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-item/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/ProductApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/config/MybatisPlusConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/BaseCategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/BaseSaleAttrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/BaseTrademarkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/SkuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/controller/SpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/BaseCategory2Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/BaseCategory3Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/BaseCategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/BaseSaleAttrMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/BaseTrademarkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuAttrValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuImageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SkuSaleAttrValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SpuImageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SpuInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SpuPosterMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SpuSaleAttrMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/mapper/SpuSaleAttrValueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/rpc/CategoryRpcController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/rpc/SkuRpcController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseCategory2Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseCategory3Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseCategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseSaleAttrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/BaseTrademarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SkuSaleAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SpuImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SpuInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SpuPosterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SpuSaleAttrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/SpuSaleAttrValueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategory2ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategory3ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseCategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseSaleAttrServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/BaseTrademarkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SkuSaleAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuPosterServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuSaleAttrServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/java/com/atguigu/gmall/product/service/impl/SpuSaleAttrValueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/json/保存sku.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/json/保存spu.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/json/保存属性.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/json/修改属性.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/BaseCategory2Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/BaseCategory3Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/BaseSaleAttrMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/BaseTrademarkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuAttrValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuImageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SkuSaleAttrValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SpuImageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SpuInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SpuPosterMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SpuSaleAttrMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/mapper/SpuSaleAttrValueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/test/java/com/atguigu/gmall/product/JsoupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/service-product/src/test/java/com/atguigu/gmall/product/MinioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/WebAllApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/controller/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/feign/CategoryFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/feign/SkuDetailFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-JD-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-addressList.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-cooperation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-getOrderInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-login-manage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-myOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-mycomment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-pay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-payconfirm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-payfail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-paysuccess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-sampling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-seckill-index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-seckill-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-seckillOrder.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-shop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-shoplogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-success-cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-weixinpay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/pages-zoom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/widget-cartPanelView.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/css/widget-jquery.autocomplete.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/autocomplete.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/catalogSearch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/list-data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/nav-data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/orders.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productAlso.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productChoiceness.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productGuess.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productInfo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productList.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/productRelationship.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/shoplist-data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/shoplist.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/data/success.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-moon.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-moon.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-moon.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-pc.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-pc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-pc.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-pc.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-tb.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-tb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-tb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-tb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-touch.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-touch.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-touch.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/fonts/icon-touch.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/hm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/Arrow_left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/Arrow_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/b2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/b3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/bg-who1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/buy001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/buy002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/buy01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/car.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/cooperation_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/down-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/dp01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/dp02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/dp03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/dp04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/empty_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/fail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/gocart.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/gocart01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/goods1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/gotop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/icon-red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/intro01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/intro02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/intro03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/itemlike06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/l-m01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/list.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/login-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/manage-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/mobile06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/part01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/part02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/part03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/pay5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/phone14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/photo_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/sampling_head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/seckillbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/shi_heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/shop-intro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/shop-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/shop-part.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/t.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/title_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/_/y24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/account.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/ad.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/ad1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/addimg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/ali.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/banner1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/banner3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/banner4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/barrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/bg0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/brand_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/cartPanelViewIcons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/choosed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/duihuan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/erweima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-b01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-b02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/floor-1-b03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/goods.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/interest06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/like_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/linker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/loginbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/mod-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/paylogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/qq.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/quan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/sina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/today01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/today02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/today03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/today04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/wx_cz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/img/zoom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/activity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/favorInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/orderInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/orderRefundInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/seckill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/trade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/api/userAddress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/model/cartModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/addressList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/city-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/jquery.slideunlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/login-manage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/person-collect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/person-footmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/seckill-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/shoplogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/sm-city-picker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/pages/updateimg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/jquery.jqzoom/jquery.jqzoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/jquery.jqzoom/zoom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/qrcode.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/stomp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/sui/sui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/plugins/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/static/js/widget/cartPanelView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/cart/addCart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/cart/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/common/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/common/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/common/left.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/common/loginHeader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/couponInfo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/index/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/item/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/list/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/order/myOrder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/order/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/order/trade.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/payment/pay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/payment/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/payment/weixin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/seckill/fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/seckill/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/seckill/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/seckill/queue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/web-all/src/main/resources/templates/seckill/trade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,25 +494,93 @@
     </option>
   </component>
   <component name="ProjectId" id="2YZdQr4bLF3ue0lL49CWEpVbKdQ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "F:/zwork/javaProject/gmallparent/gmall-parent/model/src/main/java/com/atguigu/gmall/model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22577855",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "ce09b25ce13099f6e0b4aee61b9a055c"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.atguigu.gmall.model.list" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\zwork\javaProject\gmallparent\gmall-parent\model\src\main\java\com\atguigu\gmall\model" />
+      <recent name="F:\zwork\javaProject\gmallparent\gmall-parent\common\service-util\src\main\java\com\atguigu\gmall\common" />
+      <recent name="F:\zwork\javaProject\gmallparent\gmall-parent\common\common-util\src\main\java\com\atguigu\gmall\common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
+    <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.product.ProductApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.product.ServiceProductApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.ServiceProductApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,8 +589,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700737025482</updated>
-      <workItem from="1700737026849" duration="871000" />
+      <workItem from="1700737026849" duration="1044000" />
+      <workItem from="1700738091567" duration="210000" />
+      <workItem from="1700738317706" duration="270000" />
+      <workItem from="1700738600392" duration="657000" />
+      <workItem from="1700991135705" duration="1529000" />
+      <workItem from="1700993523902" duration="2684000" />
+      <workItem from="1701088623211" duration="4582000" />
+      <workItem from="1702032235371" duration="11887000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1700738007348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700738007348</updated>
+    </task>
+    <task id="LOCAL-00002" summary="12.12提交">
+      <created>1702394802262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702394802262</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,5 +628,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="init" />
+    <MESSAGE value="12.12提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.12提交" />
   </component>
 </project>

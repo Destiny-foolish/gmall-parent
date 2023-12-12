@@ -1,0 +1,92 @@
+{
+  "id": null,
+  "spuId": 31,
+  "price": "2999.00",
+  "skuName": "荣耀80 1.6亿像素超清主摄 AI Vlog视频大师 全新Magic OS 7.0系统 5G手机 12GB+256GB 碧波微蓝",
+  "weight": "0.5",
+  "skuDesc": "商品名称：荣耀荣耀手机商品编号：100047337601商品毛重：500.00g商品产地：中国大陆CPU型号：骁龙782G运行内存：8GB机身颜色：碧波微蓝三防标准：不支持防水屏幕分辨率：FHD+充电功率：50-79W机身内存：256GB机身色系：蓝色系屏幕材质：OLED曲面屏后摄主像素：1.6亿像素风格：大气，时尚，科技",
+  "category3Id": 61,
+  "tmId": 2,
+  "skuDefaultImg": "http://192.168.200.100:9000/mall-oss/2022-12-02/e0c69115-b3f7-4962-89ed-d491362e1ffc_2.png",
+
+  "skuAttrValueList": [
+    {
+      "attrId": "1",
+      "valueId": "5"
+    },
+    {
+      "attrId": "2",
+      "valueId": "8"
+    },
+    {
+      "attrId": "3",
+      "valueId": "17"
+    },
+    {
+      "attrId": "4",
+      "valueId": "26"
+    },
+    {
+      "attrId": "5",
+      "valueId": "44"
+    },
+    {
+      "attrId": "11",
+      "valueId": "70"
+    },
+    {
+      "attrId": "7",
+      "valueId": "77"
+    },
+    {
+      "attrId": "12",
+      "valueId": "80"
+    }
+  ],
+  "skuSaleAttrValueList": [
+    {
+      "saleAttrValueId": "128",
+      "saleAttrValueName": "碧波微蓝",
+      "baseSaleAttrId": "1",
+      "saleAttrName": "选择颜色"
+    },
+    {
+      "saleAttrValueId": "131",
+      "saleAttrValueName": "12+256",
+      "baseSaleAttrId": "2",
+      "saleAttrName": "选择版本"
+    }
+  ],
+  "skuImageList": [
+    {
+      "spuImgId": 315,
+      "imgName": "1.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/c5a622dc-dd67-420b-81c4-609e4114fc41_1.png",
+      "isDefault": 0
+    },
+    {
+      "spuImgId": 316,
+      "imgName": "2.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/e0c69115-b3f7-4962-89ed-d491362e1ffc_2.png",
+      "isDefault": 1
+    },
+    {
+      "spuImgId": 317,
+      "imgName": "3.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/776416cb-c2d9-4b32-9ff0-037afabb704c_3.png",
+      "isDefault": 0
+    },
+    {
+      "spuImgId": 318,
+      "imgName": "5.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/ace4178f-2025-4967-a640-9b421603ab54_5.png",
+      "isDefault": 0
+    },
+    {
+      "spuImgId": 314,
+      "imgName": "4.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/59738d6e-2f2e-48ff-8bc5-04f2742f650c_4.png",
+      "isDefault": 0
+    }
+  ]
+}

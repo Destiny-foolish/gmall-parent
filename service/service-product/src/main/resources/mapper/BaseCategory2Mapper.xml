@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.gmall.product.mapper.BaseCategory2Mapper">
+
+    <resultMap id="BaseResultMap" type="com.atguigu.gmall.product.entity.BaseCategory2">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="category1Id" column="category1_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,category1_id
+    </sql>
+
+
+<!--
+三级分类：无限级分类，不确定级数分类怎么写？
+1、全部分类都查出来自己用代码组装
+2、数据库一次性返回层级关系并封装好
+-->
+    <resultMap id="CategoryTreeRM"
+               type="com.atguigu.gmall.product.vo.CategoryTreeVo">
+        <id property="categoryId" column="c1id"></id>
+        <result property="categoryName" column="c1name"></result>
+        <collection property="categoryChild"
+                    ofType="com.atguigu.gmall.product.vo.CategoryTreeVo">
+            <id property="categoryId" column="c2id"></id>
+            <result property="categoryName" column="c2name"></result>
+            <collection property="categoryChild"
+                        ofType="com.atguigu.gmall.product.vo.CategoryTreeVo">
+                <id property="categoryId" column="c3id"></id>
+                <result property="categoryName" column="c3name"></result>
+            </collection>
+        </collection>
+    </resultMap>
+
+    <select id="getCategoryTree"
+            resultMap="CategoryTreeRM">
+        select bc1.id c1id,bc1.`name` c1name,
+               bc2.id c2id,bc2.`name` c2name,
+               bc3.id c3id,bc3.`name` c3name
+        from base_category1 bc1
+                 left join base_category2 bc2 on bc1.id=bc2.category1_id
+                 left join base_category3 bc3 on bc2.id=bc3.category2_id
+    </select>
+
+    <select id="getCategoryTreeWithC3Id"
+            resultMap="CategoryTreeRM">
+        select bc1.id c1id,bc1.`name` c1name,
+               bc2.id c2id,bc2.`name` c2name,
+               bc3.id c3id,bc3.`name` c3name
+        from base_category1 bc1
+                 left join base_category2 bc2 on bc1.id=bc2.category1_id
+                 left join base_category3 bc3 on bc2.id=bc3.category2_id
+        where bc3.id=#{c3Id}
+    </select>
+</mapper>

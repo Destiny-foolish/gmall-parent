@@ -1,0 +1,83 @@
+{
+  "id": null,
+  "spuName": "荣耀80",
+  "description": "商品名称：荣耀荣耀手机商品编号：100048864963商品毛重：500.00g商品产地：中国大陆三防标准：不支持防水屏幕分辨率：FHD+充电功率：50-79W",
+  "category3Id": 61,
+  "tmId": 2,
+  "spuImageList": [
+    {
+      "imgName": "5.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/91964d90-45d2-4398-b7fb-6c786f32c664_5.png"
+    },
+    {
+      "imgName": "4.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/1f5b437b-42e1-4b74-b091-1e3e4ab7dd2f_4.png"
+    },
+    {
+      "imgName": "2.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/a5487b5c-3c69-49c9-82d1-54d880fca008_2.png"
+    },
+    {
+      "imgName": "1.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/a21f9da6-52ce-4f04-b750-8cef1681501d_1.png"
+    },
+    {
+      "imgName": "3.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/5ab6952b-f629-4766-842c-71f8af47047c_3.png"
+    },
+    {
+      "imgName": "3.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/d839d20b-6731-4ce5-b504-9f14e14d2b40_3.png"
+    },
+    {
+      "imgName": "2.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/985d5e5d-4013-4e39-a1e2-b9ad8166b260_2.png"
+    },
+    {
+      "imgName": "1.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/a2f6778f-b7e2-4757-834a-96cc37dec0e4_1.png"
+    },
+    {
+      "imgName": "4.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/01e53684-251e-409a-ac80-0bc6deba1371_4.png"
+    },
+    {
+      "imgName": "5.png",
+      "imgUrl": "http://192.168.200.100:9000/mall-oss/2022-12-02/d2688999-12f5-43a3-b331-79df81bb2428_5.png"
+    }
+  ],
+  "spuSaleAttrList": [
+    {
+      "baseSaleAttrId": "1",
+      "saleAttrName": "选择颜色",
+      "spuSaleAttrValueList": [
+        {
+          "baseSaleAttrId": "1",
+          "saleAttrValueName": "碧波微蓝"
+        },
+        {
+          "baseSaleAttrId": "1",
+          "saleAttrValueName": "亮黑色"
+        }
+      ]
+    },
+    {
+      "baseSaleAttrId": "2",
+      "saleAttrName": "选择版本",
+      "spuSaleAttrValueList": [
+        {
+          "baseSaleAttrId": "2",
+          "saleAttrValueName": "8+256"
+        },
+        {
+          "baseSaleAttrId": "2",
+          "saleAttrValueName": "12+256"
+        },
+        {
+          "baseSaleAttrId": "2",
+          "saleAttrValueName": "12+512"
+        }
+      ]
+    }
+  ]
+}
