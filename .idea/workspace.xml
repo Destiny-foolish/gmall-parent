@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07836e6f-b4b6-43ab-8482-a774224170cf" name="Changes" comment="12.12提交">
+    <list default="true" id="07836e6f-b4b6-43ab-8482-a774224170cf" name="Changes" comment="12.25更改git提交大小&#10;git config --local http.postBuffer524288000">
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/thread/AppThreadPoolAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/thread/annotation/EnableAppThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/atguigu/gmall/common/config/thread/properties/AppThreadProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/ItemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/ItemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/SkuDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/java/com/atguigu/gmall/item/service/impl/SkuDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-item/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-item/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service-product/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service-product/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/web-all/src/main/java/com/atguigu/gmall/web/controller/IndexController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +62,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "dynamic.classpath": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "F:/zwork/javaProject/gmallparent/gmall-parent/model/src/main/java/com/atguigu/gmall/model",
+    "last_opened_file_path": "F:/zwork/javaProject/gmallparent/gmall-parent/service/service-product/src/main/resources/application.yaml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +73,8 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.22577855",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "ce09b25ce13099f6e0b4aee61b9a055c"
+    "spring.configuration.checksum": "9d2f6b4faa0d76b85945e33c545171c7",
+    "two.files.diff.last.used.file": "F:/zwork/javaProject/gmallparent/gmall-parent/service/service-product/src/main/resources/application.yaml"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -89,7 +99,33 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebAllApplication">
+  <component name="RunManager" selected="Spring Boot.ProductApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="server-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="service-item" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.item.ItemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.gmall.item.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-product" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.atguigu.gmall.product.ProductApplication" />
@@ -118,8 +154,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.WebAllApplication" />
         <item itemvalue="Spring Boot.ProductApplication" />
+        <item itemvalue="Spring Boot.ItemApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.WebAllApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +177,7 @@
       <workItem from="1700993523902" duration="2684000" />
       <workItem from="1701088623211" duration="4582000" />
       <workItem from="1702032235371" duration="12792000" />
+      <workItem from="1703595468153" duration="4279000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1700738007348</created>
@@ -167,6 +206,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -182,6 +232,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="12.12提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.12提交" />
+    <MESSAGE value="12.25更改git提交大小&#10;git config --local http.postBuffer524288000" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.25更改git提交大小&#10;git config --local http.postBuffer524288000" />
   </component>
 </project>
